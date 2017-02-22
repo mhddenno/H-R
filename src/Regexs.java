@@ -1,9 +1,9 @@
 
-public abstract class Algorithms {
+public abstract class Regexs {
 	String text;
 	char type;
 	String solution;
-	Algorithms(String s, char c, String so){
+	Regexs(String s, char c, String so){
 		text=s;
 		type=c;
 		solution=so;

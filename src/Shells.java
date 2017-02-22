@@ -1,9 +1,9 @@
 
-public abstract class Algorithms {
+public abstract class Shells {
 	String text;
 	char type;
 	String solution;
-	Algorithms(String s, char c, String so){
+	Shells(String s, char c, String so){
 		text=s;
 		type=c;
 		solution=so;
