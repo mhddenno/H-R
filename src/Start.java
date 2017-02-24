@@ -5,6 +5,27 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Start {
+	
+	 public static  Node insert(Node head,int data) {
+	        if(head==null){
+	            return new Node(data);
+	        }
+	        //Complete this method
+	        Node n=head;
+	        while(n.next!=null){
+	            n=n.next;
+	        }
+	        Node newHead=new Node(data);
+	        n.next=newHead;
+	        return head;
+	    }
+	 public static void display(Node head) {
+	        Node start = head;
+	        while(start != null) {
+	            System.out.print(start.data + " ");
+	            start = start.next;
+	        }
+	    }
 
 	public static void print(int[] arr){
 		for(int j=0;j<arr.length;j++){
@@ -56,7 +77,7 @@ public class Start {
 	}
 	
 	public static void main(String[] args) {
-		
+		/*
         Scanner in = new Scanner(System.in);
         int q = in.nextInt();
         for(int a0 = 0; a0 < q; a0++){
@@ -68,6 +89,7 @@ public class Start {
             		counter--;
             	}
             	else{
+            	
             		String sub=s.substring(counter-1);
             		for(int i=sub.length()-1;i<=0;i--){
             			if(Integer.parseInt(sub)-Integer.parseInt(s.substring(counter-1-i,counter-1))==1){
@@ -78,8 +100,17 @@ public class Start {
             }
                  
         }
-		
-		
+		*/
+        Scanner sc = new Scanner(System.in);
+        Node head = null;
+        int N = sc.nextInt();
+
+        while(N-- > 0) {
+            int ele = sc.nextInt();
+            head = insert(head,ele);
+        }
+        display(head);
+        sc.close();
 		
 		
 		
@@ -630,6 +661,7 @@ public class Start {
         }
         
 	}*/
+        
         
         /*
          * Day zero
